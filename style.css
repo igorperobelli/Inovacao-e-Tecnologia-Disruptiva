@@ -16,6 +16,17 @@ header {
     justify-content: space-between;
 }
 
+.log_news {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.fa {
+  font-size: 2rem;
+  color: #fff;
+}
+
 input[type=text], input[type=password] {
     width: 100%;
     padding: 12px 20px;
