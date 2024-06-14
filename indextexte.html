@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carrossel</title>
+<style>
+    .carousel {
+        width: 400px;
+        overflow: hidden;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .carousel-inner {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+
+    .carousel-item {
+        width: 100px;
+        flex: 0 0 auto;
+        margin: 10px;
+        background-color: #ccc;
+        text-align: center;
+    }
+
+    .btn {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: none;
+        border: none;
+        font-size: 20px;
+    }
+
+    .btn-prev {
+        left: 0;
+    }
+
+    .btn-next {
+        right: 0;
+    }
+</style>
+</head>
+<body>
+<div class="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item">1</div>
+        <div class="carousel-item">2</div>
+        <div class="carousel-item">3</div>
+        <div class="carousel-item">4</div>
+        <div class="carousel-item">5</div>
+        <div class="carousel-item">6</div>
+        <div class="carousel-item">7</div>
+        <div class="carousel-item">8</div>
+    </div>
+    <button class="btn btn-prev" onclick="prevSlide()">&#10094;</button>
+    <button class="btn btn-next" onclick="nextSlide()">&#10095;</button>
+</div>
+
+<script>
+    // Define uma variável para acompanhar o índice do item atualmente visível no carrossel
+let currentIndex = 0;
+
+// Seleciona todos os elementos com a classe 'carousel-item' e armazena-os em uma NodeList
+const items = document.querySelectorAll('.carousel-item');
+
+// Calcula o número total de itens no carrossel
+const totalItems = items.length;
+
+// Define quantos itens devem ser visíveis ao mesmo tempo no carrossel
+const visibleItems = 3;
+
+// Calcula o índice máximo que pode ser alcançado sem ultrapassar os limites do carrossel
+const maxIndex = totalItems - visibleItems;
+
+// Define a função que avança para o próximo slide
+function nextSlide() {
+    // Verifica se o índice atual é menor do que o índice máximo permitido
+    if (currentIndex < maxIndex) {
+        // Incrementa o índice atual
+        currentIndex++;
+        // Chama a função para atualizar a posição do carrossel na tela
+        updateCarousel();
+    }
+}
+
+// Define a função que retrocede para o slide anterior
+function prevSlide() {
+    // Verifica se o índice atual é maior que zero (ou seja, não é o primeiro slide)
+    if (currentIndex > 0) {
+        // Decrementa o índice atual
+        currentIndex--;
+        // Chama a função para atualizar a posição do carrossel na tela
+        updateCarousel();
+    }
+}
+
+// Define a função que atualiza a posição do carrossel na tela
+function updateCarousel() {
+    // Calcula o deslocamento necessário para mostrar o item atual na tela
+    const offset = currentIndex * -110; // 100px de largura do item + 10px de margem entre os itens
+    // Atualiza o estilo CSS do elemento com a classe 'carousel-inner' para mover o carrossel
+    document.querySelector('.carousel-inner').style.transform = `translateX(${offset}px)`;
+}
+</script>
+</body>
+</html>
