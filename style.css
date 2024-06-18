@@ -41,7 +41,7 @@ input[type=text], input[type=password] {
     box-sizing: border-box;
 }
 
-button {
+.btnHeader {
     background: rgb(151,157,172);
     color: white;
     padding: 14px 20px;
@@ -172,25 +172,52 @@ button {
   opacity: 80%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-.carousel{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 10px;
-  align-items: center;
+.carrousel {
+  width: 80vw;/* Define a largura do carrossel */
+  overflow: hidden;/* Oculta o estouro para que os itens do carrossel não saiam da área visível */
+   margin: 0 auto;/* Centraliza o carrossel horizontalmente */
+   position: relative;/* Posiciona o carrossel relativamente para que os botões "Anterior" e "Próximo" possam ser posicionados absolutamente em relação a ele */
 }
-.tamanhoDiv{
-  width: 30vw;
-  height: auto;
+
+
+.carrousel-inner {
+  display: flex;/* Define o layout dos itens do carrossel como flexbox */
+  transition: transform 0.5s ease;/* Adiciona uma transição suave ao movimento dos itens do carrossel */
+}
+
+
+.carrousel-item {
+  width: 20rem;/* Define a largura de cada item do carrossel */
+  flex: 0 0 auto;/* Define o tamanho flexível dos itens do carrossel para que eles se ajustem ao espaço disponível */
+  margin: 10px;/* Adiciona margem aos itens do carrossel */
+  background-color: #ccc;/* Define a cor de fundo dos itens do carrossel */
+  text-align: center;/* Centraliza o texto dentro dos itens do carrossel */
+}
+
+
+.btn {
+  cursor: pointer;/* Define o cursor do mouse como ponteiro para os botões "Anterior" e "Próximo" */
+  position: absolute;/* Posiciona os botões "Anterior" e "Próximo" absolutamente em relação ao carrossel */
+  top: 50%;/* Centraliza os botões "Anterior" e "Próximo" verticalmente dentro do carrossel */
+  transform: translateY(-50%);
+  background: none;/* Remove o estilo padrão dos botões */
+  border: none;/* Remove o estilo padrão dos botões */
+  font-size: 20px;/* Define o tamanho da fonte dos botões "Anterior" e "Próximo" */
+}
+
+/* Posiciona o botão "Anterior" à esquerda do carrossel */
+.btn-prev {
+  left: 0;
+}
+
+/* Posiciona o botão "Próximo" à direita do carrossel */
+.btn-next {
+  right: 0;
+}
+
+
+
+.imgDiv{
+  width: 100%;
+  margin-bottom: 10px;
 }
