@@ -49,7 +49,7 @@ function prevSlide() {
 // Define a função que atualiza a posição do carrossel na tela
 function updateCarousel() {
     // Calcula o deslocamento necessário para mostrar o item atual na tela
-    const offset = currentIndex * -330; // 100px de largura do item + 10px de margem entre os itens
+    const offset = currentIndex * -335; // 300px de largura do item + 35px de margem entre os itens
     // Atualiza o estilo CSS do elemento com a classe 'carousel-inner' para mover o carrossel
     document.querySelector('.carrousel-inner').style.transform = `translateX(${offset}px)`;
 }
