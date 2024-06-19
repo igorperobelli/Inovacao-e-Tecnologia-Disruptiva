@@ -1,0 +1,38 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+   background-image: url(cadastra-se.img/tecnologia-tcc.png);
+   background-repeat: no-repeat; 
+   background-size: cover;
+   background-position: center;
+   
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+.conteiner{
+    padding: 5em;
+    display: flex;
+}
+.titulo-h2{
+    text-align: center;
+    color: white;
+    margin-bottom: 2em;
+    
+}
+form{
+padding: 2em;
+display: block;
+margin: 3em;
+border: 1px solid white;
+
+ }
+label{
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+}
