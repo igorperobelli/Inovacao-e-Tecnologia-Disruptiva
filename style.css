@@ -201,7 +201,10 @@ input[type=text], input[type=password] {
   text-align: center;/* Centraliza o texto dentro dos itens do carrossel */
 }
 
-
+.carrousel-item:hover{
+  border: solid 1px black;
+  opacity: 95%;
+}
 .btn {
   cursor: pointer;/* Define o cursor do mouse como ponteiro para os botões "Anterior" e "Próximo" */
   position: absolute;/* Posiciona os botões "Anterior" e "Próximo" absolutamente em relação ao carrossel */
@@ -229,7 +232,46 @@ input[type=text], input[type=password] {
   margin-bottom: 10px;
 }
 
+.s3 {
+  display: flex;
+}
+.s3 div {
+  display: grid;
+  flex: 1;
+  height: 80vh;
+  text-align: center;
+  align-items: center;
+}
 
+.s3 div:hover {
+  flex: 10;
+  text-align: left;
+  transition: 0.6s;
+}
+
+.s3 div h2{
+  margin-top: 7rem;
+  padding: 1rem;
+}
+
+#tesla{
+  background-color: #979DAC;
+}
+
+#SpaceX{
+  background-color: #7D8597;
+}
+
+#Robinhood{
+  background-color: #5C677D;
+}
+
+#ImpossibleFoods{
+  background-color: #33415C;
+}
+#Nubank{
+  background-color: #000000;
+}
 
 
 
