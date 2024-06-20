@@ -5,18 +5,18 @@
 }
 body {
     font-family: Arial, sans-serif;
-   background-image: url(cadastra-se.img/tecnologia-tcc.png);
-   background-repeat: no-repeat; 
-   background-size: cover;
-   background-position: center;
-   
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+    background-image: url(cadastra-se.img/tecnologia-tcc.png);
+    
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-  }
+}
 .conteiner{
-    padding: 5em;
+    padding: 4em;
     display: flex;
 }
 .titulo-h2{
@@ -29,10 +29,29 @@ form{
 padding: 2em;
 display: block;
 margin: 3em;
-border: 1px solid white;
+
 
  }
+input{
+  width:  20em;
+  height: 2em;
+}
+
 label{
     color: rgb(255, 255, 255);
-    font-size: 2em;
+    font-size: 1.5em;
 }
+.btnHeader {
+    background: rgb(151,157,172);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em;
+  }
+  .fa{
+ color: rgb(8, 8, 8);
+
+  }
