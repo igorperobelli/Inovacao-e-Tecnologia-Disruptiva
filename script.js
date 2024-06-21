@@ -13,16 +13,16 @@
 let currentIndex = 0;
 
 // Seleciona todos os elementos com a classe 'carousel-item' e armazena-os em uma NodeList
-const items = document.querySelectorAll('.carrousel-item');
+const itens = document.querySelectorAll('.carrousel-item');
 
 // Calcula o número total de itens no carrossel
-const totalItems = items.length;
+const totalItens = itens.length;
 
 // Define quantos itens devem ser visíveis ao mesmo tempo no carrossel
-const visibleItems = 3;
+const visibleItens = 3;
 
 // Calcula o índice máximo que pode ser alcançado sem ultrapassar os limites do carrossel
-const maxIndex = totalItems - visibleItems;
+const maxIndex = totalItens - visibleItens;
 
 // Define a função que avança para o próximo slide
 function nextSlide() {
