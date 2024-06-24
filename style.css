@@ -180,7 +180,7 @@ input[type=text], input[type=password] {
 }
 
 .carrousel {
-  width: 78vw;/* Define a largura do carrossel */
+  width: 85vw;/* Define a largura do carrossel */
   overflow: hidden;/* Oculta o estouro para que os itens do carrossel não saiam da área visível */
    margin: 0 auto;/* Centraliza o carrossel horizontalmente */
    position: relative;/* Posiciona o carrossel relativamente para que os botões "Anterior" e "Próximo" possam ser posicionados absolutamente em relação a ele */
@@ -210,14 +210,14 @@ input[type=text], input[type=password] {
   position: absolute;/* Posiciona os botões "Anterior" e "Próximo" absolutamente em relação ao carrossel */
   top: 50%;/* Centraliza os botões "Anterior" e "Próximo" verticalmente dentro do carrossel */
   transform: translateY(-50%);
-  background: none;/* Remove o estilo padrão dos botões */
+  background: blue;/* Remove o estilo padrão dos botões */
   border: none;/* Remove o estilo padrão dos botões */
-  font-size: 20px;/* Define o tamanho da fonte dos botões "Anterior" e "Próximo" */
+  font-size: 30px;/* Define o tamanho da fonte dos botões "Anterior" e "Próximo" */
 }
 
 /* Posiciona o botão "Anterior" à esquerda do carrossel */
 .btn-prev {
-  left: -1%;
+  left: 0%;
 }
 
 /* Posiciona o botão "Próximo" à direita do carrossel */
@@ -228,7 +228,8 @@ input[type=text], input[type=password] {
 
 
 .imgDiv{
-  width: 100%;
+  max-width: 100%;
+  height: 50%;
   margin-bottom: 10px;
 }
 
