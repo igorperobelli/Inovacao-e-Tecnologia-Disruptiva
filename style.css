@@ -245,17 +245,19 @@ input[type=text], input[type=password] {
 
 .s3 div:hover {
   flex: 10;
-  text-align: left;
   transition: 0.6s;
 }
 
 .s3 div h2{
   margin-top: 7rem;
-  padding: 1rem;
+  padding: 0.2rem;
 }
 
 #tesla{
-  background-color: #979DAC;
+  background-image: url(imgs/download.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 40vh;
 }
 
 #SpaceX{
@@ -274,8 +276,14 @@ input[type=text], input[type=password] {
 }
 
 
+#tesla div{
+  /* display: none; */
+  
+}
 
-
+#tesla div:hover{
+  width: 100px;
+}
 
 
 footer{

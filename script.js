@@ -53,3 +53,4 @@ function updateCarousel() {
     // Atualiza o estilo CSS do elemento com a classe 'carousel-inner' para mover o carrossel
     document.querySelector('.carrousel-inner').style.transform = `translateX(${offset}px)`;
 }
+
