@@ -54,3 +54,29 @@ function updateCarousel() {
     document.querySelector('.carrousel-inner').style.transform = `translateX(${offset}px)`;
 }
 
+
+function toggleExpandirDiv(id) {
+    let divClicada = document.getElementById(id);
+    let conteudoDivClicada = divClicada.querySelector(".conteudoDiv");
+  
+    // Percorre todas as bordaDiv
+    let bordaDivs = document.querySelectorAll(".bordaDiv");
+    bordaDivs.forEach(function(div) {
+      if (div.id !== id) {
+        // Se não for a div clicada, contrai e remove a classe "visible"
+        div.style.flex = "1";
+        div.querySelector(".conteudoDiv").classList.remove("visible");
+      }
+    });
+  
+    // Alterna entre expandir e contrair a div clicada
+    if (conteudoDivClicada.classList.contains("visible")) {
+      // Se já estiver expandida, contrai
+      divClicada.style.flex = "1";
+      conteudoDivClicada.classList.remove("visible");
+    } else {
+      // Se não estiver expandida, expande
+      divClicada.style.flex = "10";
+      conteudoDivClicada.classList.add("visible");
+    }
+  }
