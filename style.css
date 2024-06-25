@@ -175,10 +175,11 @@ input[type=text], input[type=password] {
 
 .s1  {
   padding: 2rem;
-  background-image: url('imgs/banner1.png');
+  background-image: url('imgs/barnes-1.png');
   opacity: 80%;
   color: #fff;
   text-align: center;
+  background-size: cover;
 }
 
 .fade-in {
