@@ -259,25 +259,16 @@ footer{
   height: 60vh;
 }
 
-/* .bordaDiv img {
-  display: block;
-  width: 100%;
-  height: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  opacity: 0.8;
-} */
-
 .bordaDiv h2 {
   z-index: 1;
   position: relative;
+  margin-top: 50%;
 }
 
 .conteudoDiv {
   display: none;
   z-index: 1;
+  margin-top: 40%;
 }
 
 .visible {

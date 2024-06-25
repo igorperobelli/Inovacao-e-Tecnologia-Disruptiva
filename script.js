@@ -77,6 +77,7 @@ function toggleExpandirDiv(id) {
     } else {
       // Se não estiver expandida, expande
       divClicada.style.flex = "10";
+      divClicada.style.gap = "20px";
       conteudoDivClicada.classList.add("visible");
     }
   }
