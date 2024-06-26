@@ -249,11 +249,7 @@ input[type=text], input[type=password] {
 }
 
 
-footer{
-  background: linear-gradient(90deg, rgba(151,157,172,1) 0%, rgba(51,65,92,1) 76%, rgba(0,24,69,1) 100%);
-  padding: 2%;
 
-}
 
 .s3 {
   display: flex;
@@ -288,4 +284,20 @@ footer{
 
 .visible {
   display: block;
+}
+.rodape{
+  background: linear-gradient(90deg, rgba(151,157,172,1) 0%, rgba(51,65,92,1) 76%, rgba(0,24,69,1) 100%);
+  padding: 5%;
+
+}
+.rodape ul{
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  list-style: none;
+}
+.rodape a{
+  color: white;
+  text-decoration: none;
+  font-size: 3em;
 }
