@@ -248,7 +248,10 @@ input[type=text], input[type=password] {
   margin-bottom: 10px;
 }
 
-
+/* #deepMind{
+  background-image: url(imgs/deepmind.jpg);
+  background-position: -3rem;
+} */
 
 
 .s3 {
