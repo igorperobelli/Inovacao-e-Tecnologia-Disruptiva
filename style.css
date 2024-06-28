@@ -290,7 +290,7 @@ input[type=text], input[type=password] {
 }
 .rodape{
   background: linear-gradient(90deg, rgba(151,157,172,1) 0%, rgba(51,65,92,1) 76%, rgba(0,24,69,1) 100%);
-  padding: 5%;
+  padding: 2%;
 
 }
 .rodape ul{
@@ -302,5 +302,5 @@ input[type=text], input[type=password] {
 .rodape a{
   color: white;
   text-decoration: none;
-  font-size: 3em;
+  font-size: 2em;
 }
