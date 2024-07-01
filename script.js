@@ -61,6 +61,8 @@ function toggleExpandirDiv(id) {
   
     // Percorre todas as bordaDiv
     let bordaDivs = document.querySelectorAll(".bordaDiv");
+
+    let titulo = document.querySelectorAll(".titulo")
     bordaDivs.forEach(function(div) {
       if (div.id !== id) {
         // Se não for a div clicada, contrai e remove a classe "visible"
@@ -79,5 +81,9 @@ function toggleExpandirDiv(id) {
       divClicada.style.flex = "10";
       divClicada.style.gap = "20px";
       conteudoDivClicada.classList.add("visible");
+      titulo.style.marginTop = "0";
     }
   }
+
+
+
