@@ -312,13 +312,23 @@ margin-top: 20px;
 }
 
 #ImpossibleFoods{
-  background-image: url(imgs/);
+  background-image: url(imgs/download.png);
   background-size: 20vw;
   background-position: relative;
   background-repeat: no-repeat;
   background-color: white;
   color: black;
 }
+
+#Nubank{
+  background-image: url(imgs/nuBank.webp);
+  background-size: 20vw;
+  background-position: relative;
+  background-repeat: no-repeat;
+  background-color: white;
+  color: black;
+}
+
 
 
 
