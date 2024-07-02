@@ -272,7 +272,7 @@ margin-top: 20px;
   flex: 1;
   background-size: cover;
   color: rgb(250, 6, 6);
-  background-color: #000;
+  background-color: #31018a;
   padding: 1rem;
   transition: flex 0.5s ease;
   display: flex;
@@ -291,6 +291,14 @@ margin-top: 20px;
 }
 #deepmind{
   background-image: url(imgs/deepmind.jpg);
+  background-size: 20vw;
+  background-position: relative;
+  background-repeat: no-repeat;
+  background-color: white;
+  color: black;
+}
+#ethereum{
+  background-image: url(imgs);
   background-size: 20vw;
   background-position: relative;
   background-repeat: no-repeat;
