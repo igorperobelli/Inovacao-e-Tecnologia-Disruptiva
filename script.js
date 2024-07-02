@@ -82,6 +82,7 @@ function toggleExpandirDiv(id) {
       divClicada.style.gap = "20px";
       conteudoDivClicada.classList.add("visible");
       titulo.style.marginTop = "0";
+      divClicada.style.backgroundPosition = "20%"
     }
   }
 

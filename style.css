@@ -258,12 +258,6 @@ margin-top: 20px;
   margin-bottom: 10px;
 }
 
-/* #deepMind{
-  background-image: url(imgs/deepmind.jpg);
-  background-position: -3rem;
-} */
-
-
 .s3 {
   display: flex;
 }
@@ -291,14 +285,6 @@ margin-top: 20px;
 }
 #deepmind{
   background-image: url(imgs/deepmind.jpg);
-  background-size: 20vw;
-  background-position: relative;
-  background-repeat: no-repeat;
-  background-color: white;
-  color: black;
-}
-#ethereum{
-  background-image: url(imgs);
   background-size: 20vw;
   background-position: relative;
   background-repeat: no-repeat;
