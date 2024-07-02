@@ -19,10 +19,10 @@ const itens = document.querySelectorAll('.carrousel-item');
 const totalItens = itens.length;
 
 // Define quantos itens devem ser visíveis ao mesmo tempo no carrossel
-const visibleItens = 3;
+let visibleItens = 1;
 
 // Calcula o índice máximo que pode ser alcançado sem ultrapassar os limites do carrossel
-const maxIndex = totalItens - visibleItens;
+let maxIndex = totalItens - visibleItens;
 
 // Define a função que avança para o próximo slide
 function nextSlide() {
@@ -49,8 +49,9 @@ function prevSlide() {
 // Define a função que atualiza a posição do carrossel na tela
 function updateCarousel() {
     // Calcula o deslocamento necessário para mostrar o item atual na tela
-    const offset = currentIndex * -335; // 300px de largura do item + 35px de margem entre os itens
+    let offset = currentIndex * -310; // 300px de largura do item + 35px de margem entre os itens
     // Atualiza o estilo CSS do elemento com a classe 'carousel-inner' para mover o carrossel
+   
     document.querySelector('.carrousel-inner').style.transform = `translateX(${offset}px)`;
 }
 
@@ -62,6 +63,7 @@ function toggleExpandirDiv(id) {
     // Percorre todas as bordaDiv
     let bordaDivs = document.querySelectorAll(".bordaDiv");
 
+  
     let titulo = document.querySelectorAll(".titulo")
     bordaDivs.forEach(function(div) {
       if (div.id !== id) {
@@ -82,9 +84,22 @@ function toggleExpandirDiv(id) {
       divClicada.style.gap = "20px";
       conteudoDivClicada.classList.add("visible");
       titulo.style.marginTop = "0";
-      divClicada.style.backgroundPosition = "20%"
+        // Altera a posição do background X
     }
   }
 
-
-
+  function trocarPosicaoFundo() {
+    let divTesla = document.getElementById("tesla");
+    let fundoX = divTesla.getAttribute("background-position-x");
+    let imgTeslaY = divTesla.getAttribute("background-position-y");
+    let fundoFlex = divTesla.getAttribute("flex");
+  
+    if (fundoFlex === "10") {
+      divTesla.style.backgroundPositionX = "-100rem";
+      divTesla.style.backgroundPositionY = "-100rem";
+    } else {
+      divTesla.style.backgroundPositionX = fundoX;
+      divTesla.style.backgroundPositionY = imgTeslaY;
+    }
+  }
+  

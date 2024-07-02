@@ -195,7 +195,7 @@ input[type=text], input[type=password] {
 
 
 .carrousel {
-  width: 100vw;/* Define a largura do carrossel */
+  width: 85vw;/* Define a largura do carrossel */
   overflow: hidden;/* Oculta o estouro para que os itens do carrossel não saiam da área visível */
    margin: 0 auto;/* Centraliza o carrossel horizontalmente */
    position: relative;/* Posiciona o carrossel relativamente para que os botões "Anterior" e "Próximo" possam ser posicionados absolutamente em relação a ele */
@@ -205,22 +205,24 @@ input[type=text], input[type=password] {
 .carrousel-inner {
   display: flex;/* Define o layout dos itens do carrossel como flexbox */
   transition: transform 0.6s ease;/* Adiciona uma transição suave ao movimento dos itens do carrossel */
-  margin: 0 10rem;
+  margin: 0 7rem;
 }
 
 
 .carrousel-item {
-  width: 20rem;/* Define a largura de cada item do carrossel */
+  width: 30%;/* Define a largura de cada item do carrossel */
   height: 90vh;
   flex: 0 0 auto;/* Define o tamanho flexível dos itens do carrossel para que eles se ajustem ao espaço disponível */
   margin: 10px;/* Adiciona margem aos itens do carrossel */
   background-color: #ccc;/* Define a cor de fundo dos itens do carrossel */
   text-align: center;/* Centraliza o texto dentro dos itens do carrossel */
+  
 }
 
 .carrousel-item:hover{
   border: solid 1px black;
   opacity: 95%;
+  cursor: pointer;
 }
 
 .carrousel-item p {
@@ -266,7 +268,6 @@ margin-top: 20px;
   flex: 1;
   background-size: cover;
   color: rgb(250, 6, 6);
-  background-color: #31018a;
   padding: 1rem;
   transition: flex 0.5s ease;
   display: flex;
@@ -275,6 +276,11 @@ margin-top: 20px;
   justify-content: center;
   position: relative;
   height: 60vh;
+}
+
+.bordaDiv:hover{
+  border: solid 1px black;
+  cursor: pointer;
 }
 
 .titulo {
@@ -298,7 +304,7 @@ margin-top: 20px;
   background-size: 20vw;
   background-position: relative;
   background-repeat: no-repeat;
-  background-color: white;
+  background-color: #bbbbbb69;
   color: black;
 }
 
@@ -306,7 +312,7 @@ margin-top: 20px;
   background-image: url(imgs/3dlab.jpg);
   background-size: 20vw;
   background-position: relative;
-  background-color: #093cf3;
+  background-color: #003df7;
   background-position: -10% -55%;
   background-size: 19vw;
   background-repeat: no-repeat;
@@ -314,22 +320,14 @@ margin-top: 20px;
 }
 #tesla{
   background-image: url(imgs/tesla.jpg);
-  background-position: 3vw;
+  background-position: 5rem 4rem;
   background-repeat: no-repeat;
   background-size: auto 50%; 
   background-color: white;
 
-#ImpossibleFoods{
-  background-image: url(imgs/download.png);
-  background-size: 20vw;
-  background-position: relative;
-  background-repeat: no-repeat;
-  background-color: white;
-  color: black;
 }
 
-#Nubank{
-  background-image: url(imgs/nuBank.webp);
+#nubank{
   background-size: 20vw;
   background-position: relative;
   background-repeat: no-repeat;
@@ -338,10 +336,6 @@ margin-top: 20px;
 }
 
 
-
-
-
-}
 .conteudoDiv {
   display: none;
   z-index: 1; 
@@ -369,4 +363,26 @@ margin-top: 20px;
   color: white;
   text-decoration: none;
   font-size: 2em;
+}
+
+
+@media screen and (min-width:1366px) {
+  
+
+.carrousel-item{
+  height: 68vh;
+}
+
+
+
+
+}
+
+@media screen and (max-width:480px) {
+  .carrousel-item{
+    width: 95%;
+  }
+  .carrousel-inner {
+    margin: 0;
+  }
 }
