@@ -226,7 +226,8 @@ input[type=text], input[type=password] {
 }
 
 .carrousel-item p {
-margin-top: 20px;
+text-align: justify;
+padding: 10px;
 }
 .btn {
   cursor: pointer;/* Define o cursor do mouse como ponteiro para os botões "Anterior" e "Próximo" */
