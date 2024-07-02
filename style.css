@@ -9,7 +9,7 @@
 
 header {
     /* background: rgb(151,157,172); */
-    background: linear-gradient(90deg, rgba(225,227,230,1) 0%, rgba(51,65,92,1) 76%, rgba(0,24,69,1) 100%);
+    background: linear-gradient(90deg, rgba(151,157,172,1) 0%, rgba(51,65,92,1) 76%, rgba(0,24,69,1) 100%);
     padding: 2%;
     display: flex;
     align-items: center;
