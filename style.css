@@ -291,6 +291,38 @@ margin-top: 20px;
   background-color: white;
   color: black;
 }
+
+
+#ethereum{
+  background-image: url(imgs/ethereum.jpg);
+  background-size: 20vw;
+  background-position: relative;
+  background-repeat: no-repeat;
+  background-color: white;
+  color: black;
+}
+
+#lab{
+  background-image: url(imgs/3dlab.jpg);
+  background-size: 20vw;
+  background-position: relative;
+  background-repeat: no-repeat;
+  background-color: white;
+  color: black;
+}
+
+#ImpossibleFoods{
+  background-image: url(imgs/);
+  background-size: 20vw;
+  background-position: relative;
+  background-repeat: no-repeat;
+  background-color: white;
+  color: black;
+}
+
+
+
+
 .conteudoDiv {
   display: none;
   z-index: 1; 
